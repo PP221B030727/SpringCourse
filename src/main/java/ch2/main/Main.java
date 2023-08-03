@@ -11,7 +11,7 @@ public class Main {
         System.out.println(context);
         Integer myInt = context.getBean(Integer.class);
         System.out.println(myInt);
-        Parrot parrot = context.getBean("parrot1",Parrot.class);
+        Parrot parrot = context.getBean("Cococo",Parrot.class);
         System.out.println(parrot.getName());
 
 
