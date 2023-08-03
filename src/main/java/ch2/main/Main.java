@@ -8,8 +8,7 @@ public class Main {
     public static void main(String[] args){
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
         Cat someCat = context.getBean(Cat.class);
-        someCat.setName("NewName:Myau");
-        System.out.println(someCat.getName());
+        System.out.println(someCat);
 //        String x = context.getBean(String.class);
 //        System.out.println(context);
 //        Integer myInt = context.getBean(Integer.class);
