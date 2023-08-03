@@ -7,12 +7,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args){
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        String x = context.getBean(String.class);
-        System.out.println(context);
-        Integer myInt = context.getBean(Integer.class);
-        System.out.println(myInt);
-        Parrot parrot = context.getBean("Cococo",Parrot.class);
-        System.out.println(parrot.getName());
+        Cat someCat = context.getBean(Cat.class);
+        someCat.setName("NewName:Myau");
+        System.out.println(someCat.getName());
+//        String x = context.getBean(String.class);
+//        System.out.println(context);
+//        Integer myInt = context.getBean(Integer.class);
+//        System.out.println(myInt);
+//        Parrot parrot = context.getBean("Cococo",Parrot.class);
+//        System.out.println(parrot.getName());
 
 
 

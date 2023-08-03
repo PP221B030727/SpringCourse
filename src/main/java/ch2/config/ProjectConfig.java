@@ -3,9 +3,11 @@ package ch2.config;
 import ch2.main.Parrot;
 import ch2.main.User;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan(basePackages = "ch2.main")
 public class ProjectConfig {
     @Bean("Cococo")
     Parrot parrot(){
